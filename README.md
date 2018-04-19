@@ -59,32 +59,29 @@ The flow of application as follows:
 	"expired": false<br/>
 }<br/>
 <br/>
-
-<br/>
-<b>3) RESULT:</b>
+<b>3) RESULT:</b><br/>
 	Server validates the <b>access_token</b> with help of spring security (InMemory/Database/Ldap store), and if the "access token" is authenticated, it will provide access to rest controller, search for URL pattern, executes the logic and send back the result to user as per given format below.<br/>
-	
-<i>Input:</i> http://<hostname>:<port>/WebServices/user/list?access_token=4aa9f305-bae6-48c1-843f-427667826970
+<i>Input:</i> http://<hostname>:<port>/WebServices/user/list?access_token=4aa9f305-bae6-48c1-843f-427667826970<br/>
 <br/><i>Output:</i><br/>
-[
-	{
-		"username": "ABC",
-		"emailId": "abc@gmail.com",
-		"mobileNo": "99999999"
-	},
-	{
-		"username": "EFG",
-		"emailId": "efg@gmail.com",
-		"mobileNo": "88888888"
-	},
-	{
-		"username": "HIJ",
-		"emailId": "hij@gmail.com",
-		"mobileNo": "77777777"
-	},
-	{
-		"username": "klm",
-		"emailId": "KLM@gmail.com",
-		"mobileNo": "66666666"
-	}
-]
+[<br/>
+	{<br/>
+		"username": "ABC",<br/>
+		"emailId": "abc@gmail.com",<br/>
+		"mobileNo": "99999999"<br/>
+	},<br/>
+	{<br/>
+		"username": "EFG",<br/>
+		"emailId": "efg@gmail.com",<br/>
+		"mobileNo": "88888888"<br/>
+	},<br/>
+	{<br/>
+		"username": "HIJ",<br/>
+		"emailId": "hij@gmail.com",<br/>
+		"mobileNo": "77777777"<br/>
+	},<br/>
+	{<br/>
+		"username": "klm",<br/>
+		"emailId": "KLM@gmail.com",<br/>
+		"mobileNo": "66666666"<br/>
+	}<br/>
+]<br/>
